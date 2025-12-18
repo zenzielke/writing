@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Zielke | Conversation & Character Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apple-style Font Stack */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        
+        /* Custom Utilities for Glass/Dark Mode */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <main class="max-w-5xl mx-auto px-6 py-24 space-y-32">
+
+        <header class="space-y-8 fade-in pt-12">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+                Designing the logic of language<br>
+                <span class="text-zinc-500">and the character of systems.</span>
+            </h1>
+            
+            <div class="h-px w-24 bg-indigo-500/50 my-8"></div>
+            
+            <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl font-light leading-relaxed">
+                My name is <span class="text-white font-medium">Zen Zielke</span>, and I operate at the intersection of <span class="text-indigo-400">Writing</span> and <span class="text-indigo-400">Systems Engineering</span>. 
+                <br><br>
+                As a Graduate Student (M.S., JHU), Novelist, and Poet, I build experiences through the quantum mechanics of code, the architecture of spatial computing, and the language of world building.
+            </p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-12 border-t border-zinc-900">
+            <div class="md:col-span-4 space-y-4">
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase">01. Creative Writing</h2>
+                <h3 class="text-2xl font-semibold text-white">System Persona Design</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    <strong>Project:</strong> <em>No More Horses</em> (Novel)<br><br>
+                    <strong>The Logic:</strong> In fiction, I design dialogue based on internal constraints. 
+                    <em>Eli</em> (High Constraint) relies on silence and clipped syntax to maintain control. 
+                    <em>Walt</em> (Low Constraint) uses rhetorical warmth to lower the "cognitive load" of the interaction.
+                </p>
+            </div>
+            <div class="md:col-span-8 glass-panel rounded-2xl p-8 md:p-12 relative overflow-hidden group">
+                <div class="font-mono text-sm space-y-6 text-zinc-300">
+                    <div class="pl-4 border-l-2 border-indigo-500/30">
+                        <span class="text-indigo-400 text-xs block mb-1">Walt (Safety/Low Constraint)</span>
+                        "Truth be told—didn't think you'd be back this way."
+                    </div>
+                    <div class="pl-4 border-l-2 border-zinc-700">
+                        <span class="text-zinc-500 text-xs block mb-1">Eli (Guarded/High Constraint)</span>
+                        "Didn't plan to."
+                    </div>
+                    <div class="pl-4 border-l-2 border-indigo-500/30">
+                        <span class="text-indigo-400 text-xs block mb-1">Walt</span>
+                        "Well, hell. Plans're just promises we make ourselves before we know better."
+                    </div>
+                    <div class="pl-4 border-l-2 border-zinc-700">
+                        <span class="text-zinc-500 text-xs block mb-1">Eli</span>
+                        "Guess so."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-12 border-t border-zinc-900">
+            <div class="md:col-span-4 space-y-4">
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase">02. Technical Communication</h2>
+                <h3 class="text-2xl font-semibold text-white">Academic Rigor</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    <strong>Project:</strong> <em>Strategic Behavior in Quantum Game Theory</em> (Research Paper)<br><br>
+                    <strong>The Skill:</strong> Beyond implementation, I document complex technical systems. This project required implementing the Eisert-Wilkens-Lewenstein (EWL) protocol in Python and producing the formal academic analysis of the equilibrium shifts.
+                </p>
+            </div>
+            <div class="md:col-span-8 space-y-6">
+                
+                <div class="glass-panel rounded-xl p-6 border border-zinc-800">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                        <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                        <span class="text-xs text-zinc-500 font-mono ml-2">source: quantum_prisoners.py</span>
+                    </div>
+                    <pre class="font-mono text-xs md:text-sm text-emerald-400 overflow-x-auto"><code>Constructing the Entanglement Gate J(gamma)
+Using Qiskit for EWL Protocol Implementation
+
+X = np.array([[0, 1], [1, 0]])
+XX = np.kron(X, X)
+J_matrix = expm(1j * gamma * XX / 2) 
+
+Result: Maximal entanglement (pi/2) disrupts 
+the dominant defection strategy.</code></pre>
+                </div>
+
+                <div class="glass-panel rounded-xl p-8 border border-zinc-800 bg-zinc-900/50">
+                    <h4 class="text-zinc-500 text-xs font-bold uppercase tracking-wider mb-3">From the Abstract</h4>
+                    <p class="text-sm md:text-base text-zinc-300 leading-relaxed font-serif">
+                        This research paper investigates the implications of extending beyond the classical constraints that bound the players within the dilemma through the application of the Eisert-Wilkens-Lewenstein (EWL) protocol. Specifically, we analyze the emergence of a 'Quantum' strategy (Q) that utilizes the phase space of the qubit to counteract classical defection.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-12 border-t border-zinc-900">
+            <div class="md:col-span-4 space-y-4">
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase">03. Spatial Design</h2>
+                <h3 class="text-2xl font-semibold text-white">Generative Materiality</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    <strong>Project:</strong> <em>Aether</em> (visionOS Prototype)<br><br>
+                    <strong>The Concept:</strong> Moving text off the 2D screen and into 3D material space. The interface uses a variable blur radius that reacts to real-time visibility data. A sunny day feels light; a storm feels dense.
+                </p>
+                <div class="pt-4">
+                    <a href="https://zenzielke.github.io/aether/" target="_blank" class="inline-flex items-center text-xs font-bold text-white border border-white/20 rounded-full px-4 py-2 hover:bg-white hover:text-black transition-all">
+                        View Aether Case Study
+                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-8 relative group">
+                <div class="aspect-video bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 relative">
+                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="assets/aether.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-12 border-t border-zinc-900">
+            <div class="md:col-span-4 space-y-4">
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase">04. Sensory Design</h2>
+                <h3 class="text-2xl font-semibold text-white">Atmosphere & Vibe</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    <strong>Project:</strong> <em>The Crypt</em> (Editorial)<br><br>
+                    <strong>The Goal:</strong> Capturing the "Vibe" of a physical space. Whether for Maps Editorial or Apple Music, I craft descriptions that evoke a specific mood and culture.
+                </p>
+            </div>
+            <div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-panel p-8 rounded-2xl md:col-span-2">
+                    <h4 class="font-serif text-2xl text-white mb-4">Late Nights and Killer Bites</h4>
+                    <p class="text-zinc-300 font-serif leading-loose">
+                        "The Crypt has built a kingdom for the 'weirdos'... Picture this: a dimly lit, cozy cavern filled with year-long halloween decorations. It’s the kind of place where metalheads, punks, and night owls alike kick back."
+                    </p>
+                    <div class="mt-6 pl-4 border-l border-indigo-500">
+                        <p class="text-sm text-zinc-400 italic">
+                            "Imagine sinking your teeth into poutine with coconut milk-based cheese... or an all-American cheeseburger elevated with a leek aioli."
+                        </p>
+                    </div>
+                    <div class="pt-4">
+                    <a href="https://therooster.com/articles/late-nights-and-killer-bites-the-crypt-is-the-kind-of-spot-where-metalheads-punks-and-night-owls-alike-kick-back-not-just-to-drink-but-to-eat/" target="_blank" class="inline-flex items-center text-xs font-bold text-white border border-white/20 rounded-full px-4 py-2 hover:bg-white hover:text-black transition-all">
+                        View Article
+                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-12 border-t border-zinc-900">
+            <div class="md:col-span-4 space-y-4">
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase">05. Tone & Philosophy</h2>
+                <h3 class="text-2xl font-semibold text-white">The "Why"</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    <strong>Project:</strong> <em>If Everything Ends...</em> (Script)<br><br>
+                    <strong>The Strategy:</strong> Addressing heavy user anxieties with levity. I use direct address and humor to lower the barrier to complex philosophical arguments (Camus, Sartre, Nietzsche).
+                </p>
+            </div>
+            <div class="md:col-span-8">
+                <blockquote class="text-xl md:text-3xl font-light leading-snug text-white">
+                    "I hate to be the one to break it to you. But you're going to die one day... If you've ever reached that point of existential dread... you're not alone."
+                </blockquote>
+                <p class="mt-4 text-indigo-400 font-medium">
+                    "Do you like the French? The absurd? Then I may just have the guy for you."
+                </p>
+            </div>
+        </section>
+
+        <section class="py-24 border-t border-zinc-900 text-center space-y-12">
+            <div>
+                <h2 class="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-4">06. Economy of Language</h2>
+                <h3 class="text-3xl font-light text-white">Constraint-Based Writing</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left">
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-zinc-500 uppercase tracking-wider">From "Marrow"</h4>
+                    <p class="text-zinc-300 font-serif italic text-lg leading-relaxed">
+                        "There is a part of me, <br>
+                        that presses against my ribs, <br>
+                        and settles beneath my sternum. <br>
+                        It claws at the places I could have been."
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-zinc-500 uppercase tracking-wider">From "Frost"</h4>
+                    <p class="text-zinc-300 font-serif italic text-lg leading-relaxed">
+                        "The earth had already chosen spring, <br>
+                        while I stood counting the cold."
+                    </p>
+                </div>
+                 <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-zinc-500 uppercase tracking-wider">From "Let It Break You"</h4>
+                    <p class="text-zinc-300 font-serif italic text-lg leading-relaxed">
+                        "Let it strip you to the bone, <br>
+                        leave you gasping in the dark <br>
+                        because only there, <br>
+                        in that hollow ruin <br>
+                        will you finally meet yourself."
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-zinc-500 uppercase tracking-wider">From "Coal"</h4>
+                    <p class="text-zinc-300 font-serif italic text-lg leading-relaxed">
+                        "I look out at night <br>
+                        and see cities doused <br>
+                        in glowing light... <br>
+                        I see a crowd of people all assured."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="border-t border-zinc-900 pt-24 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-6">Ready to Build.</h2>
+                    <p class="text-zinc-400 max-w-md">
+                        I am currently seeking team-based roles in <strong>Design</strong> and <strong>Writing</strong>. 
+                    </p>
+                </div>
+                <div class="flex flex-col md:items-end justify-center gap-4">
+                    <a href="assets/resume.pdf" class="text-xl text-white hover:text-indigo-400 transition-colors">Download Resume ↗</a>
+                    <a href="https://www.linkedin.com/in/zenzielke/" class="text-xl text-white hover:text-indigo-400 transition-colors">LinkedIn ↗</a>
+                    <a href="mailto:zen.zielke@gmail.com" class="text-xl text-white hover:text-indigo-400 transition-colors">Email Me ↗</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
