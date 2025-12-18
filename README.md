@@ -33,7 +33,7 @@ Capturing the sensory experience of physical spaces. Used to demonstrate the abi
 Managing user anxiety through tone. This script uses direct address and humor to guide users through complex philosophical concepts (existentialism/entropy) without inducing cognitive overload.
 
 ### 6. Economy of Language: Constraint-Based Writing
-**Project:** *Selected Poetry*
+**Project:** *Marigolds*
 A collection of poetry ("Marrow," "Frost," "Coal") demonstrating the ultimate exercise in economy of language—delivering maximum emotional impact with minimum character count.
 
 ## 🛠 Tech Stack
